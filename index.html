@@ -8,27 +8,27 @@
     <title>撲克牌計算機</title>
 </head>
 <body>
-    <div id="calc" class="calc flex flex-col justify-between items-stretch mx-auto max-w-xl bg-gray-50 text-gray-600 shadow-2xl touch-manipulation">
-        <div class="times p-2 md:p-4 w-full text-right text-lg md:text-xl">次數：<span class="count">0</span></div>
+    <div id="calc" class="calc flex flex-col justify-between items-stretch mx-auto max-w-lg bg-gray-50 text-gray-600 shadow-2xl touch-manipulation">
+        <div class="times p-2 md:p-4 w-full text-right text-lg md:text-xl">A：<span class="a-number mr-4">4</span>真數：<span class="real-number mr-4">0</span>次數：<span class="count">0</span></div>
         <div class="history h-full overflow-y-scroll flex flex-col-reverse space-y-8 space-y-reverse px-4">
         </div>
         <div class="keyboard h-min">
-            <div class="grid grid-cols-3 gap-2 m-2 md:gap-4 md:m-4 font-serif text-2xl md:text-3xl select-none">
-                <button onclick="minus1('A')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">A</button>
-                <button onclick="add1('2')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">2</button>
-                <button onclick="add1('3')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">3</button>
-                <button onclick="add1('4')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">4</button>
-                <button onclick="add1('5')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">5</button>
-                <button onclick="add1('6')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">6</button>
-                <button onclick="add0('7')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">7</button>
-                <button onclick="add0('8')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">8</button>
-                <button onclick="add0('9')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">9</button>
-                <button onclick="minus1('10')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">10</button>
-                <button onclick="minus1('J')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">J</button>
-                <button onclick="minus1('Q')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">Q</button>
-                <button onclick="minus1('K')" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">K</button>
-                <button onclick="undo()" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300"><span class="material-symbols-outlined font-icon">undo</span></button>
-                <button onclick="reset()" class="h-14 md:h-20 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300 text-blue-500"><span class="material-symbols-outlined font-icon">replay</span></button>
+            <div class="grid grid-cols-3 gap-2 m-2 md:gap-4 md:m-4 font-serif text-2xl md:text-2xl select-none">
+                <button onclick="minus1('A')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">A</button>
+                <button onclick="add1('2')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">2</button>
+                <button onclick="add1('3')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">3</button>
+                <button onclick="add1('4')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">4</button>
+                <button onclick="add1('5')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">5</button>
+                <button onclick="add1('6')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">6</button>
+                <button onclick="add0('7')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">7</button>
+                <button onclick="add0('8')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">8</button>
+                <button onclick="add0('9')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">9</button>
+                <button onclick="minus1('10')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">10</button>
+                <button onclick="minus1('J')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">J</button>
+                <button onclick="minus1('Q')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">Q</button>
+                <button onclick="minus1('K')" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300">K</button>
+                <button onclick="undo()" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300"><span class="material-symbols-outlined font-icon">undo</span></button>
+                <button onclick="reset()" class="h-14 md:h-14 rounded-2xl border-2 border-slate-100 bg-slate-50 shadow-md shadow-sky-100 hover:shadow-sky-200 hover:shadow-inner hover:bg-slate-50 active:shadow-sky-300 text-blue-500"><span class="material-symbols-outlined font-icon">replay</span></button>
             </div>
         </div>
     </div>
@@ -43,14 +43,19 @@ window.addEventListener("resize", setHeight);
 setHeight();
 
 let sum = 0;
+let cards = 312;
+let aCards = 24;
 let history = [];
 let count = document.querySelector('.count');
+let realNumber = document.querySelector('.real-number');
+let aNumber = document.querySelector('.a-number');
 let historyArea = document.querySelector('.history');
 
 const add0 = (number) => {
     let data = {number: number, action: '+0', sum: sum};
     history.push(data);
     createHistory(data);
+    cards--;
     updateCount();
     console.log(history);
 };
@@ -59,6 +64,7 @@ const add1 = (number) => {
     let data = {number: number, action: '+1', sum: ++sum};
     history.push(data);
     createHistory(data);
+    cards--;
     updateCount();
     console.log(history);
 };
@@ -67,6 +73,10 @@ const minus1 = (number) => {
     let data = {number: number, action: '-1', sum: --sum};
     history.push(data);
     createHistory(data);
+    cards--;
+    if (number === 'A') {
+        aCards--;
+    }
     updateCount();
     console.log(history);
 };
@@ -74,7 +84,11 @@ const minus1 = (number) => {
 const undo = () => {
     if (history.length > 0) {
         sum = history[history.length - 2] != undefined ? history[history.length - 2].sum : 0;
+        if (history[history.length - 1].number === 'A') {
+            aCards++;
+        }
         history.pop();
+        cards++;
         updateCount();
         historyArea.firstElementChild.remove();
         console.log(history);
@@ -84,6 +98,8 @@ const undo = () => {
 const reset = () => {
     history = [];
     sum = 0;
+    cards = 312;
+    aCards = 24;
     updateCount();
     historyArea.innerHTML = '';
     console.clear();
@@ -91,6 +107,10 @@ const reset = () => {
 
 const updateCount = () => {
     count.innerHTML = history.length;
+    let real = (sum < 0) ? roundDown(Math.abs(sum) / roundDown((cards / 52), 2), 2) * -1 : roundDown(Math.abs(sum) / roundDown((cards / 52), 2), 2);
+    realNumber.innerHTML = real;
+    let aTrack = roundDown(aCards / roundDown((cards / 52), 2), 2);
+    aNumber.innerHTML = aTrack;
 };
 
 const createHistory = (data) => {
@@ -99,4 +119,8 @@ const createHistory = (data) => {
     historyList.innerHTML = `<span><span class="font-serif">(${data.number})</span> ${data.action}</span><span class="text-2xl md:text-3xl text-blue-500">${data.sum}</span>`;
     historyArea.prepend(historyList);
 };
+
+const roundDown = (num, decimal) => { 
+    return Math.floor((num + Number.EPSILON) * Math.pow(10, decimal)) / Math.pow(10, decimal);
+}
 </script>
