@@ -43,8 +43,8 @@ window.addEventListener("resize", setHeight);
 setHeight();
 
 let sum = 0;
-let cards = 312;
-let aCards = 24;
+let cards = 416;
+let aCards = 32;
 let history = [];
 let count = document.querySelector('.count');
 let realNumber = document.querySelector('.real-number');
@@ -98,8 +98,8 @@ const undo = () => {
 const reset = () => {
     history = [];
     sum = 0;
-    cards = 312;
-    aCards = 24;
+    cards = 416;
+    aCards = 32;
     updateCount();
     historyArea.innerHTML = '';
     console.clear();
